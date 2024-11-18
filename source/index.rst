@@ -13,7 +13,14 @@ mybook 目录
 语法：`Sphinx <https://www.osgeo.cn/sphinx/usage/restructuredtext/basics.html#google_vignette>`_
 
 .. toctree::
-   :maxdepth: 2  
+   :maxdepth: 3  
    :caption: ReadtheDocs:
 
+
    books/readthedocs/index
+
+   books/git/index
+
+   books/nrm/index
+
+   books/nvm/index
