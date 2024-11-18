@@ -47,7 +47,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../readthedocs/index.html">ReadTheDocs教程</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../git/index.html">git教程</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../nrm/index.html">nrm教程</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">nvm教程</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">nvm教程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">安装 NVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">验证 NVM 安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#node-js">切换 Node.js 版本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">其他命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">高级命令</a></li>
 </ul>
 </li>
 </ul>
@@ -78,9 +83,152 @@
              
   <section id="nvm">
 <h1>nvm教程<a class="headerlink" href="#nvm" title="Link to this heading"></a></h1>
-<p>这里假装你会安装node以及会使用github或者gitee等托管仓库。后续将不会出现node安装及仓库的注册等教程。</p>
+<p>以下是 NVM（Node Version Manager）的常用命令大全，这些命令可以帮助你管理和切换不同版本的 Node.js：</p>
 <div class="toctree-wrapper compound">
 </div>
+<section id="id2">
+<h2>安装 <a class="reference external" href="https://gitcode.com/gh_mirrors/nv/nvm/overview?utm_source=highlight_word_gitcode&amp;word=nvm&amp;isLogin=1/">NVM</a><a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>下载并安装 NVM:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">o</span><span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nvm</span><span class="o">-</span><span class="n">sh</span><span class="o">/</span><span class="n">nvm</span><span class="o">/</span><span class="n">v0</span><span class="mf">.39.3</span><span class="o">/</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span> <span class="o">|</span> <span class="n">bash</span>
+</pre></div>
+</div>
+</li>
+<li><p>重新加载你的 shell 配置文件:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>   <span class="c1"># 如果你使用的是 bash</span>
+<span class="n">source</span> <span class="o">~/.</span><span class="n">zshrc</span>    <span class="c1"># 如果你使用的是 zsh</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="id3">
+<h2>验证 NVM 安装<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>安装特定版本的 Node.js:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">install</span> <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>例如，安装 18.16.0 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">install</span> <span class="mf">18.16.0</span>
+</pre></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>安装最新的 LTS 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">install</span> <span class="o">--</span><span class="n">lts</span>
+</pre></div>
+</div>
+</li>
+<li><p>安装最新的 Node.js 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">install</span> <span class="n">node</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="node-js">
+<h2>切换 Node.js 版本<a class="headerlink" href="#node-js" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>使用特定版本的 Node.js:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">use</span> <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>例如，使用 18.16.0 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">use</span> <span class="mf">18.16.0</span>
+</pre></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>设置默认版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">alias</span> <span class="n">default</span> <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>例如，设置 18.16.0 为默认版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">alias</span> <span class="n">default</span> <span class="mf">18.16.0</span>
+</pre></div>
+</div>
+<ol class="arabic" start="3">
+<li><p>列出所有已安装的 Node.js 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">ls</span>
+</pre></div>
+</div>
+</li>
+<li><p>列出所有可安装的远程 Node.js 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">ls</span><span class="o">-</span><span class="n">remote</span>
+</pre></div>
+</div>
+</li>
+<li><p>列出已安装的 LTS 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">ls</span> <span class="o">--</span><span class="n">lts</span>
+</pre></div>
+</div>
+</li>
+<li><p>卸载 Node.js 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">uninstall</span> <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>例如，卸载 18.16.0 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">uninstall</span> <span class="mf">18.16.0</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>其他命令<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>显示当前使用的 Node.js 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">current</span>
+</pre></div>
+</div>
+</li>
+<li><p>显示 NVM 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+</li>
+<li><p>显示 NVM 使用帮助:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">help</span>
+</pre></div>
+</div>
+</li>
+<li><p>列出已安装的 npm 版本:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">ls</span><span class="o">-</span><span class="n">remote</span> <span class="o">--</span><span class="n">npm</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="id5">
+<h2>高级命令<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>运行特定版本的 Node.js 代码:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">exec</span> <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>例如，使用 18.16.0 版本运行 node -v:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">exec</span> <span class="mf">18.16.0</span> <span class="n">node</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>以特定版本打开新 shell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">run</span> <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>例如，使用 18.16.0 版本打开新 shell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nvm</span> <span class="n">run</span> <span class="mf">18.16.0</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
