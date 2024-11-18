@@ -148,6 +148,9 @@ sphinx-autobuild source build/html
 html_theme = 'sphinx_rtd_theme'
 
 ```
+
+[其他主题参考](https://sphinx-themes.org/sample-sites/sphinx-rtd-theme/)
+
 ## 支持markdown ## 
 
 Sphinx默认只支持reST格式的文件，我们需要安装支持MarkDown的插件：
@@ -195,6 +198,6 @@ Indices and tables
 
 [reStructuredText 英文](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html){target="_blank"};
 
-[reStructuredText 中文](https://www.osgeo.cn/sphinx/usage/restructuredtext/basics.html#google_vignette){target="_blank"}; 
+[reStructuredText 中文](https://www.osgeo.cn/sphinx/usage/restructuredtext/basics.html#google_vignette)或者 https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html
 
 [reStructuredText 配置项](https://www.osgeo.cn/sphinx-note/sphinx-conf.html){target="_blank"};  
