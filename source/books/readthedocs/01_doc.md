@@ -1,9 +1,4 @@
 
- # 注册ReadTheDocs #
-
- 登录 [https://readthedocs.org](https://about.readthedocs.com/?ref=readthedocs.org)注册账号。
-
-
  # 安装Sphinx #
  ## 安装Sphinx ## 
  打开终端：这一步由于太基础了所以不做过多介绍

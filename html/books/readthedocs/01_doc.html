@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1. 注册ReadTheDocs &mdash; mybook 1.0 文档</title>
+  <title>1. 安装Sphinx &mdash; mybook 1.0 文档</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
 
@@ -20,7 +20,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="3. 文档托管" href="02_doc.html" />
+    <link rel="next" title="2. 文档托管" href="02_doc.html" />
     <link rel="prev" title="ReadTheDocs书" href="index.html" /> 
 </head>
 
@@ -46,31 +46,30 @@
               <p class="caption" role="heading"><span class="caption-text">ReadtheDocs:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">ReadTheDocs书</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1. 注册ReadTheDocs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sphinx">2. 安装Sphinx</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">2.1. 安装Sphinx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">2.2. 创建项目</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tree">2.3. 安装tree查看目录结构</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#html">2.4. 编译文档成html</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#http">2.5. 部署http服务</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. 安装Sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.1. 安装Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.2. 创建项目</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tree">1.3. 安装tree查看目录结构</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#html">1.4. 编译文档成html</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#http">1.5. 部署http服务</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id3">安装HTTP服务</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id4">启动HTTP服务</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">2.6. 更换主题</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">1.6. 更换主题</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id6">安装主题</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#conf-py">修改conf.py文件</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#markdown">2.7. 支持markdown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#markdown">1.7. 支持markdown</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id7">安装markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id8">修改conf.py文件</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">2.8. 文档结构描述及配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">1.8. 文档结构描述及配置</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="02_doc.html">3. 文档托管</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_doc.html">2. 文档托管</a></li>
 </ul>
 </li>
 </ul>
@@ -90,7 +89,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">ReadTheDocs书</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">1. </span>注册ReadTheDocs</li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>安装Sphinx</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/books/readthedocs/01_doc.md.txt" rel="nofollow"> 查看页面源码</a>
       </li>
@@ -100,14 +99,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="readthedocs">
-<h1><span class="section-number">1. </span>注册ReadTheDocs<a class="headerlink" href="#readthedocs" title="Link to this heading"></a></h1>
-<p>登录 <a class="reference external" href="https://about.readthedocs.com/?ref=readthedocs.org">https://readthedocs.org</a>注册账号。</p>
-</section>
-<section id="sphinx">
-<h1><span class="section-number">2. </span>安装Sphinx<a class="headerlink" href="#sphinx" title="Link to this heading"></a></h1>
+  <section id="sphinx">
+<h1><span class="section-number">1. </span>安装Sphinx<a class="headerlink" href="#sphinx" title="Link to this heading"></a></h1>
 <section id="id1">
-<h2><span class="section-number">2.1. </span>安装Sphinx<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.1. </span>安装Sphinx<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>打开终端：这一步由于太基础了所以不做过多介绍</p>
 <p>linux 系统下安装极简，一行代码搞定
 <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">cask</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></p>
@@ -115,7 +110,7 @@
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code></p>
 </section>
 <section id="id2">
-<h2><span class="section-number">2.2. </span>创建项目<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.2. </span>创建项目<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">myBook</span>
 
 <span class="n">cd</span> <span class="n">myBook</span>
@@ -156,7 +151,7 @@
 </div>
 </section>
 <section id="tree">
-<h2><span class="section-number">2.3. </span>安装tree查看目录结构<a class="headerlink" href="#tree" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.3. </span>安装tree查看目录结构<a class="headerlink" href="#tree" title="Link to this heading"></a></h2>
 <p>window</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tree</span>
 </pre></div>
@@ -179,7 +174,7 @@
 </div>
 </section>
 <section id="html">
-<h2><span class="section-number">2.4. </span>编译文档成html<a class="headerlink" href="#html" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.4. </span>编译文档成html<a class="headerlink" href="#html" title="Link to this heading"></a></h2>
 <p>命令</p>
 <p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p>
 <p>结果</p>
@@ -210,7 +205,7 @@
 <p>在build/html目录下打开index.html就可以看到效果</p>
 </section>
 <section id="http">
-<h2><span class="section-number">2.5. </span>部署http服务<a class="headerlink" href="#http" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.5. </span>部署http服务<a class="headerlink" href="#http" title="Link to this heading"></a></h2>
 <p>make html的方式可以生成html文件，但是需要用浏览器打开。我们也可以通过sphinx-autobuild工具部署http服务：</p>
 <section id="id3">
 <h3>安装HTTP服务<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
@@ -226,7 +221,7 @@
 </section>
 </section>
 <section id="id5">
-<h2><span class="section-number">2.6. </span>更换主题<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.6. </span>更换主题<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
 <p>上面的测试效果，使用的是默认的主题alabaster，如果想安装其它的主题，可以先到Sphinx的官网查看：<a class="reference external" href="https://sphinx-themes.org/"></a></p>
 <section id="id6">
 <h3>安装主题<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
@@ -242,7 +237,7 @@
 </section>
 </section>
 <section id="markdown">
-<h2><span class="section-number">2.7. </span>支持markdown<a class="headerlink" href="#markdown" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.7. </span>支持markdown<a class="headerlink" href="#markdown" title="Link to this heading"></a></h2>
 <p>Sphinx默认只支持reST格式的文件，我们需要安装支持MarkDown的插件：</p>
 <section id="id7">
 <h3>安装markdown<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
@@ -259,7 +254,7 @@
 </section>
 </section>
 <section id="id9">
-<h2><span class="section-number">2.8. </span>文档结构描述及配置<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.8. </span>文档结构描述及配置<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
 <p>要配置文档内容，我们需要修改<code class="docutils literal notranslate"><span class="pre">index.rst</span></code>文件（也可以使用*.md格式），它的内容如下：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. cpp_dictionary documentation master file, created by
    sphinx-quickstart on Wed Jul  7 09:42:42 2021.
@@ -298,7 +293,7 @@ Indices and tables
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
         <a href="index.html" class="btn btn-neutral float-left" title="ReadTheDocs书" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="02_doc.html" class="btn btn-neutral float-right" title="3. 文档托管" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="02_doc.html" class="btn btn-neutral float-right" title="2. 文档托管" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
