@@ -1,0 +1,8 @@
+
+安装Sphinx
+=========================
+ 
+ Mac 系统下安装极简，一行代码搞定
+ `
+ 	brew cask install sphinx
+ `

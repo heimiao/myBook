@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. 文档托管 &mdash; mybook 1.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=f115507d"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="prev" title="1. 注册ReadTheDocs" href="01_doc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            mybook
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">ReadtheDocs:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ReadTheDocs书</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_doc.html">1. 注册ReadTheDocs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_doc.html#sphinx">2. 安装Sphinx</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. 文档托管</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#github">3.1. github上托管仓库</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">mybook</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">ReadTheDocs书</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3. </span>文档托管</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/books/readthedocs/02_doc.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><span class="section-number">3. </span>文档托管<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="github">
+<h2><span class="section-number">3.1. </span>github上托管仓库<a class="headerlink" href="#github" title="Link to this heading"></a></h2>
+<p>首先在github上创建仓库，比如myBook，然后建立本地仓库:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;# myBook&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+<span class="n">git</span> <span class="n">init</span>
+<span class="n">git</span> <span class="n">add</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;first commit&quot;</span>
+<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">M</span> <span class="n">main</span>
+<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">TOMO</span><span class="o">-</span><span class="n">CAT</span><span class="o">/</span><span class="n">myBook</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
+</div>
+<p>在 <code class="docutils literal notranslate"><span class="pre">https://readthedocs.org/</span></code> 页面引入一个仓库：点击`import aProject`按钮</p>
+<p>注意如果编译出错且提示找不到插件：
+<a href="#id2"><span class="problematic" id="id3">``</span></a>`
+Running Sphinx v4.0.3
+loading translations [zh]... done
+Traceback (most recent call last):</p>
+<blockquote>
+<div><dl class="simple">
+<dt>File &quot;/home/docs/checkouts/readthedocs.org/user_builds/cpp-note/envs/latest/lib/python3.7/site-packages/sphinx/registry.py&quot;, line 420, in load_extension</dt><dd><p>mod = import_module(extname)</p>
+</dd>
+<dt>File &quot;/home/docs/checkouts/readthedocs.org/user_builds/cpp-note/envs/latest/lib/python3.7/importlib/__init__.py&quot;, line 127, in import_module</dt><dd><p>return _bootstrap._gcd_import(name[level:], package, level)</p>
+</dd>
+</dl>
+<p>File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 1006, in _gcd_import
+File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 983, in _find_and_load
+File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 965, in _find_and_load_unlocked</p>
+</div></blockquote>
+<p>ModuleNotFoundError: No module named 'sphinx_markdown_tables'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):</p>
+<blockquote>
+<div><dl class="simple">
+<dt>File &quot;/home/docs/checkouts/readthedocs.org/user_builds/cpp-note/envs/latest/lib/python3.7/site-packages/sphinx/cmd/build.py&quot;, line 279, in build_main</dt><dd><p>args.tags, args.verbosity, args.jobs, args.keep_going)</p>
+</dd>
+<dt>File &quot;/home/docs/checkouts/readthedocs.org/user_builds/cpp-note/envs/latest/lib/python3.7/site-packages/sphinx/application.py&quot;, line 243, in __init__</dt><dd><p>self.setup_extension(extension)</p>
+</dd>
+<dt>File &quot;/home/docs/checkouts/readthedocs.org/user_builds/cpp-note/envs/latest/lib/python3.7/site-packages/sphinx/application.py&quot;, line 400, in setup_extension</dt><dd><p>self.registry.load_extension(self, extname)</p>
+</dd>
+<dt>File &quot;/home/docs/checkouts/readthedocs.org/user_builds/cpp-note/envs/latest/lib/python3.7/site-packages/sphinx/registry.py&quot;, line 424, in load_extension</dt><dd><p>err) from err</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>sphinx.errors.ExtensionError: Could not import extension sphinx_markdown_tables (exception: No module named 'sphinx_markdown_tables')
+Extension error:
+Could not import extension sphinx_markdown_tables (exception: No module named 'sphinx_markdown_tables')</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">原因是ReadTheDocs的python环境没有对应的第三方库文件，需要在项目根目录执行如下命令生成requirements.txt，这样ReadTheDocs会自动安装对应的插件依赖。</span>
+<span class="pre">`</span></code>
+python3 -m pip freeze &gt; requirements.txt
+<a href="#id4"><span class="problematic" id="id5">``</span></a>`
+每次push代码到main分支后ReadTheDocs都会自动构建，下图是我第一本构建好的电子书：</p>
+<blockquote>
+<div><img alt="books/readthedocs/gnu.png" src="books/readthedocs/gnu.png" />
+<p>gitee上托管仓库</p>
+</div></blockquote>
+<hr class="docutils" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="01_doc.html" class="btn btn-neutral float-left" title="1. 注册ReadTheDocs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, heimao。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
