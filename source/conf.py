@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'mybook'
+project = '黑猫书籍馆'
 copyright = '2024, heimao'
 author = 'heimao'
 release = '1.0'

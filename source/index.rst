@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-mybook 目录
+目录
 =============
 
 查看更多 ``reStructuredText（*.rst）`` 语法，`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_ 
