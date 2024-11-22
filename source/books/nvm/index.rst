@@ -6,7 +6,7 @@ nvm教程
 
 .. toctree::
     :maxdepth: 2
-    :numbered: 2
+    .. :numbered: 2
 
 安装 `NVM <https://gitcode.com/gh_mirrors/nv/nvm/overview?utm_source=highlight_word_gitcode&word=nvm&isLogin=1/>`_
 ----------

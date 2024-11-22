@@ -83,6 +83,8 @@ tree -C .
 
  `
  	make html
+   //如果报错的话看是不是没找到make文件，制定下执行本地make文件
+   .\make html
  `
 
 结果
