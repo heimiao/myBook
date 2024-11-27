@@ -1,11 +1,11 @@
-nrm教程
+nrm
 ================
 
 如果你还像以前切换npm镜像那你也太low了，现在告诉你一个很拽的方式，通过cli切换不同的镜像源 
 
 
 .. toctree::
-    :maxdepth: 2
+    .. :maxdepth: 2
     .. :numbered: 2
 
 

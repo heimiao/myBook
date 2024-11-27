@@ -1,0 +1,32 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+    <!-- 引入自定义 CSS 文件 -->
+    <link rel="stylesheet" href="{{ pathto('_static/css/main.css', 1) }}" type="text/css" />
+    <!-- 引入自定义 JavaScript 文件 -->
+    <script src="{{ pathto('_static/js/main.js', 1) }}" type="text/javascript"></script>
+{% endblock %}
+
+{% block header %}
+    <!-- 可以在这里修改头部内容，比如添加自定义 logo 或导航链接 -->
+    <div class="my-header">
+        <img src="{{ pathto('_static/images/logo.png', 1) }}" alt="My Theme Logo">
+        <ul class="my-nav">
+            <li><a href="{{ pathto('index') }}">Home</a></li>
+            <li><a href="{{ pathto('about') }}">About</a></li>
+        </ul>
+    </div>
+    {{ super() }}
+{% endblock %}
+
+{% block footer %}
+    <!-- 可以在这里修改底部内容，比如添加版权信息或社交链接 -->
+    <div class="my-footer">
+        <p>&copy; 2024 My Company. All rights reserved.</p>
+        <ul class="my-social-links">
+            <li><a href="https://facebook.com/mycompany">Facebook</a></li>
+            <li><a href="https://twitter.com/mycompany">Twitter</a></li>
+        </ul>
+    </div>
+    {{ super() }}
+{% endblock %}

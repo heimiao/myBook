@@ -1,11 +1,11 @@
-nvm教程
+nvm
 ================
 
 以下是 NVM（Node Version Manager）的常用命令大全，这些命令可以帮助你管理和切换不同版本的 Node.js：
 
 
 .. toctree::
-    :maxdepth: 2
+    .. :maxdepth: 2
     .. :numbered: 2
 
 安装 `NVM <https://gitcode.com/gh_mirrors/nv/nvm/overview?utm_source=highlight_word_gitcode&word=nvm&isLogin=1/>`_

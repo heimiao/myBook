@@ -24,3 +24,5 @@
    books/nrm/index
 
    books/nvm/index
+
+   books/maven/index
