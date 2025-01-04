@@ -25,4 +25,6 @@
 
    books/nvm/index
 
-   books/maven/index
+   books/maven/index 
+
+   books/springboot/index

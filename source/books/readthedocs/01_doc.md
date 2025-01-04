@@ -79,6 +79,9 @@ tree -C .
 ```
 
 ## 编译文档成html ##
+如果之前安装过项目，或者直接down的我的mybook项目需要提前安装下依赖包
+`pip install -r requirements.txt`才可以执行编译html命令
+
 命令
 
  `
